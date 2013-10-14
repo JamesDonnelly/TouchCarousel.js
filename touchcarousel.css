@@ -1,0 +1,27 @@
+div#wrapper {
+    width:1000px;
+    margin:0 auto;
+}
+
+section[data-carousel],
+section[data-carousel] > article {
+    display:block;
+    width:100%;
+}
+
+section[data-carousel] {
+    height:440px;
+    position:relative;
+    overflow:hidden;
+}
+
+section[data-carousel] > article {
+    height:100%;
+    position:absolute;
+    top:0;
+    left:100%;
+}
+
+section[data-carousel] > article:first-of-type {
+    left:0;
+}
